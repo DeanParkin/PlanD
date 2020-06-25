@@ -1,2 +1,2 @@
-# PlanD
-PlanD main protfolio front-end
+# Plan;D
+Plan;D main portfolio front-end

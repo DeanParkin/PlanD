@@ -36,6 +36,8 @@ h1, p {
   color: #fff;
   text-align: center;
   font-family: helvetica, arial, sans-serif;
+  margin: 3px 3px;
+  max-width: 800px;
 }
 
 img {

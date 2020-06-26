@@ -2,6 +2,66 @@
 Plan;D Main Css Styles
 */
 
+$mainColor: #0072b1;
+
+//================================================
+// Mixins
+//================================================
+@mixin animate ($attr, $time) {
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -ms-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+@mixin transform ($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+@keyframes slideInFromtop {
+  0% {
+    transform: translateY(-120%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//================================================
+// GLobal Styles
+//================================================
+
+body {
+  background-color: $mainColor;
+}
+img, h1 {
+  animation: 3s ease-out 0s 1 fadeIn;
+}
+
 div.welcome h1 {
   text-align: center;
+}
+img {
+  display: block;
+  margin:auto;
+  max-width: 500px;
 }
